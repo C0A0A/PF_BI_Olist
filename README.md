@@ -64,7 +64,7 @@ Proyecto: https://github.com/C0A0A/PF_BI_Olist/tree/main/2-%20Arquitectura/olist
 
 # Dashboard y Modelo ML Predictivo
 
-https://olist-analytics-views-ktr2lsfg5acxjnzcrm9cbf.streamlit.app/
+[https://olist-analytics-views-ktr2lsfg5acxjnzcrm9cbf.streamlit.app/](https://olistdashboard.streamlit.app/)
 
 Proyecto: https://github.com/C0A0A/PF_BI_Olist/blob/main/5-%20Producto%20final/streamlit_app.py
 
