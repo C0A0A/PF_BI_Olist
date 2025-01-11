@@ -11,7 +11,7 @@ class DBConnection:
     def get_engine(self):
         if self.engine is None:
             try:    
-                self.engine = create_engine("postgresql://olist_dw_user:arCg8bRsHsvfyeUhrvTAQsRBqjJDV51v@dpg-cln6l31r6k8c73ac507g-a.oregon-postgres.render.com/olist_dw")
+                self.engine = create_engine("")
                 print(f"Conectado a DB: {self.engine}")
             except Exception as e:
                 print(f"Error en get_engine: {e}")
