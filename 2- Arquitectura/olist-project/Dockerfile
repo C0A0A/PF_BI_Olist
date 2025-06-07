@@ -9,8 +9,6 @@ RUN pip install --upgrade pip
 RUN apt-get update \
     && apt-get -y install libpq-dev gcc
 
-RUN python -m venv venv
-
 ENV PATH="/api/venv/bin:$PATH"
 
 ENV PYTHONPATH=/api/:$PYTHONPATH
@@ -19,8 +17,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-ENV PORT=8000
-
-EXPOSE 8000
-
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}"]
